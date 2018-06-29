@@ -1,0 +1,53 @@
+=== Run information ===
+
+Scheme:       weka.associations.Apriori -N 10 -T 0 -C 0.6 -D 0.05 -U 1.0 -M 0.1 -S -1.0 -c -1
+Relation:     BASE-weka.filters.unsupervised.attribute.Remove-R2-weka.filters.unsupervised.attribute.Remove-R8-weka.filters.unsupervised.attribute.Remove-R11-weka.filters.unsupervised.attribute.Remove-R8-9
+Instances:    649
+Attributes:   18
+              sexo
+              moracomafamilia
+              nivelescolarmae
+              nivelescolarpai
+              trabalhomae
+              trabalhopai
+              tempoestudosemanal
+              realizaatividadeextracurricular
+              possuiinternetemcasa
+              temalgumrelacionamentoamoroso
+              qualidaderelacionamentofamiliar
+              tempolivre
+              saircamigos
+              consumoalcooldiasemana
+              consumoalcoolfimsemana
+              condicaodesaUde
+              faltasconceito
+              desemepenhoruim
+=== Associator model (full training set) ===
+
+
+Apriori
+=======
+
+Minimum support: 0.6 (389 instances)
+Minimum metric <confidence>: 0.6
+Number of cycles performed: 8
+
+Generated sets of large itemsets:
+
+Size of set of large itemsets L(1): 6
+
+Size of set of large itemsets L(2): 5
+
+Best rules found:
+
+ 1. faltasconceito=BAIXO 466 ==> moracomafamilia=Sim 418    <conf:(0.9)> lift:(1.02) lev:(0.01) [9] conv:(1.17)
+ 2. possuiinternetemcasa=Sim 498 ==> moracomafamilia=Sim 442    <conf:(0.89)> lift:(1.01) lev:(0.01) [5] conv:(1.08)
+ 3. desemepenhoruim=Nao 492 ==> moracomafamilia=Sim 430    <conf:(0.87)> lift:(1) lev:(-0) [-1] conv:(0.96)
+ 4. consumoalcooldiasemana=Pouquissimo 451 ==> moracomafamilia=Sim 389    <conf:(0.86)> lift:(0.98) lev:(-0.01) [-6] conv:(0.88)
+ 5. desemepenhoruim=Nao 492 ==> possuiinternetemcasa=Sim 394    <conf:(0.8)> lift:(1.04) lev:(0.03) [16] conv:(1.16)
+ 6. possuiinternetemcasa=Sim 498 ==> desemepenhoruim=Nao 394    <conf:(0.79)> lift:(1.04) lev:(0.03) [16] conv:(1.15)
+ 7. moracomafamilia=Sim 569 ==> possuiinternetemcasa=Sim 442    <conf:(0.78)> lift:(1.01) lev:(0.01) [5] conv:(1.03)
+ 8. moracomafamilia=Sim 569 ==> desemepenhoruim=Nao 430    <conf:(0.76)> lift:(1) lev:(-0) [-1] conv:(0.98)
+ 9. moracomafamilia=Sim 569 ==> faltasconceito=BAIXO 418    <conf:(0.73)> lift:(1.02) lev:(0.01) [9] conv:(1.06)
+10. moracomafamilia=Sim 569 ==> consumoalcooldiasemana=Pouquissimo 389    <conf:(0.68)> lift:(0.98) lev:(-0.01) [-6] conv:(0.96)
+

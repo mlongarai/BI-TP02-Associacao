@@ -1,0 +1,29 @@
+=== Run information ===
+
+Scheme:       weka.associations.Apriori -N 10 -T 0 -C 0.6 -D 0.05 -U 1.0 -M 0.1 -S -1.0 -c -1
+Relation:     BASE-weka.filters.unsupervised.attribute.Remove-R2-weka.filters.unsupervised.attribute.Remove-R8-weka.filters.unsupervised.attribute.Remove-R11-weka.filters.unsupervised.attribute.Remove-R8-9-weka.filters.unsupervised.attribute.Remove-R5-6,8-9-weka.filters.unsupervised.attribute.Remove-R8-9-weka.filters.unsupervised.attribute.Remove-R1-2,5-12
+Instances:    649
+Attributes:   2
+              nivelescolarmae
+              nivelescolarpai
+=== Associator model (full training set) ===
+
+
+Apriori
+=======
+
+Minimum support: 0.1 (65 instances)
+Minimum metric <confidence>: 0.6
+Number of cycles performed: 18
+
+Generated sets of large itemsets:
+
+Size of set of large itemsets L(1): 8
+
+Size of set of large itemsets L(2): 3
+
+Best rules found:
+
+ 1. nivelescolarpai=Superior 128 ==> nivelescolarmae=Superior 95    <conf:(0.74)> lift:(2.75) lev:(0.09) [60] conv:(2.75)
+ 2. nivelescolarmae=Primario 143 ==> nivelescolarpai=Primario 92    <conf:(0.64)> lift:(2.4) lev:(0.08) [53] conv:(2.01)
+

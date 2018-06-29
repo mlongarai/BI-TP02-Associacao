@@ -1,0 +1,59 @@
+=== Run information ===
+
+Scheme:       weka.associations.Apriori -N 10 -T 0 -C 0.9 -D 0.05 -U 1.0 -M 0.1 -S -1.0 -c -1
+Relation:     BASE-weka.filters.unsupervised.attribute.Remove-R2-weka.filters.unsupervised.attribute.Remove-R8-weka.filters.unsupervised.attribute.Remove-R11
+Instances:    649
+Attributes:   20
+              sexo
+              moracomafamilia
+              nivelescolarmae
+              nivelescolarpai
+              trabalhomae
+              trabalhopai
+              tempoestudosemanal
+              suporteeducacionalescolar
+              suporteeducacionalfamiliar
+              realizaatividadeextracurricular
+              possuiinternetemcasa
+              temalgumrelacionamentoamoroso
+              qualidaderelacionamentofamiliar
+              tempolivre
+              saircamigos
+              consumoalcooldiasemana
+              consumoalcoolfimsemana
+              condicaodesaUde
+              faltasconceito
+              desemepenhoruim
+=== Associator model (full training set) ===
+
+
+Apriori
+=======
+
+Minimum support: 0.4 (260 instances)
+Minimum metric <confidence>: 0.9
+Number of cycles performed: 12
+
+Generated sets of large itemsets:
+
+Size of set of large itemsets L(1): 15
+
+Size of set of large itemsets L(2): 46
+
+Size of set of large itemsets L(3): 37
+
+Size of set of large itemsets L(4): 6
+
+Best rules found:
+
+ 1. temalgumrelacionamentoamoroso=Nao faltasconceito=BAIXO 304 ==> moracomafamilia=Sim 280    <conf:(0.92)> lift:(1.05) lev:(0.02) [13] conv:(1.5)
+ 2. suporteeducacionalescolar=Nao realizaatividadeextracurricular=Sim 285 ==> moracomafamilia=Sim 260    <conf:(0.91)> lift:(1.04) lev:(0.02) [10] conv:(1.35)
+ 3. realizaatividadeextracurricular=Sim 315 ==> moracomafamilia=Sim 287    <conf:(0.91)> lift:(1.04) lev:(0.02) [10] conv:(1.34)
+ 4. suporteeducacionalescolar=Nao possuiinternetemcasa=Sim faltasconceito=BAIXO 314 ==> moracomafamilia=Sim 286    <conf:(0.91)> lift:(1.04) lev:(0.02) [10] conv:(1.33)
+ 5. moracomafamilia=Sim possuiinternetemcasa=Sim desemepenhoruim=Nao 343 ==> suporteeducacionalescolar=Nao 311    <conf:(0.91)> lift:(1.01) lev:(0.01) [3] conv:(1.09)
+ 6. moracomafamilia=Sim consumoalcooldiasemana=Pouquissimo desemepenhoruim=Nao 310 ==> suporteeducacionalescolar=Nao 281    <conf:(0.91)> lift:(1.01) lev:(0.01) [3] conv:(1.08)
+ 7. moracomafamilia=Sim realizaatividadeextracurricular=Sim 287 ==> suporteeducacionalescolar=Nao 260    <conf:(0.91)> lift:(1.01) lev:(0) [3] conv:(1.07)
+ 8. realizaatividadeextracurricular=Sim 315 ==> suporteeducacionalescolar=Nao 285    <conf:(0.9)> lift:(1.01) lev:(0) [3] conv:(1.06)
+ 9. suporteeducacionalescolar=Nao faltasconceito=BAIXO desemepenhoruim=Nao 323 ==> moracomafamilia=Sim 292    <conf:(0.9)> lift:(1.03) lev:(0.01) [8] conv:(1.24)
+10. possuiinternetemcasa=Sim faltasconceito=BAIXO 354 ==> moracomafamilia=Sim 320    <conf:(0.9)> lift:(1.03) lev:(0.01) [9] conv:(1.25)
+

@@ -1,0 +1,38 @@
+15:56:24: Weka Explorer
+15:56:24: (c) 1999-2017 The University of Waikato, Hamilton, New Zealand
+15:56:24: web: http://www.cs.waikato.ac.nz/~ml/weka/
+15:56:24: Started on Wednesday, 20 June 2018
+15:56:41: Base relation is now BASE (649 instances)
+16:12:57: Started weka.associations.Apriori
+16:12:57: Command: weka.associations.Apriori -N 10 -T 0 -C 0.9 -D 0.05 -U 1.0 -M 0.1 -S -1.0 -c -1
+16:12:57: Finished weka.associations.Apriori
+16:14:56: Command: weka.filters.unsupervised.attribute.Remove -R 1,3-23
+16:14:57: Base relation is now BASE-weka.filters.unsupervised.attribute.Remove-R1,3-23 (649 instances)
+16:15:10: Can't remove all attributes from data!
+16:15:15: Base relation is now BASE (649 instances)
+16:15:19: Command: weka.filters.unsupervised.attribute.Remove -R 2
+16:15:19: Base relation is now BASE-weka.filters.unsupervised.attribute.Remove-R2 (649 instances)
+16:15:28: Command: weka.filters.unsupervised.attribute.Remove -R 8
+16:15:28: Base relation is now BASE-weka.filters.unsupervised.attribute.Remove-R2-weka.filters.unsupervised.attribute.Remove-R8 (649 instances)
+16:15:49: Command: weka.filters.unsupervised.attribute.Remove -R 11
+16:15:49: Base relation is now BASE-weka.filters.unsupervised.attribute.Remove-R2-weka.filters.unsupervised.attribute.Remove-R8-weka.filters.unsupervised.attribute.Remove-R11 (649 instances)
+16:16:32: Started weka.associations.Apriori
+16:16:32: Command: weka.associations.Apriori -N 10 -T 0 -C 0.9 -D 0.05 -U 1.0 -M 0.1 -S -1.0 -c -1
+16:16:32: Finished weka.associations.Apriori
+16:17:51: Command: weka.filters.unsupervised.attribute.Remove -R 8-9
+16:17:51: Base relation is now BASE-weka.filters.unsupervised.attribute.Remove-R2-weka.filters.unsupervised.attribute.Remove-R8-weka.filters.unsupervised.attribute.Remove-R11-weka.filters.unsupervised.attribute.Remove-R8-9 (649 instances)
+16:19:41: Started weka.associations.Apriori
+16:19:41: Command: weka.associations.Apriori -N 10 -T 0 -C 0.6 -D 0.05 -U 1.0 -M 0.1 -S -1.0 -c -1
+16:19:41: Finished weka.associations.Apriori
+16:21:52: Command: weka.filters.unsupervised.attribute.Remove -R 5-6,8-9
+16:21:52: Base relation is now BASE-weka.filters.unsupervised.attribute.Remove-R2-weka.filters.unsupervised.attribute.Remove-R8-weka.filters.unsupervised.attribute.Remove-R11-weka.filters.unsupervised.attribute.Remove-R8-9-weka.filters.unsupervised.attribute.Remove-R5-6,8-9 (649 instances)
+16:22:05: Command: weka.filters.unsupervised.attribute.Remove -R 8-9
+16:22:05: Base relation is now BASE-weka.filters.unsupervised.attribute.Remove-R2-weka.filters.unsupervised.attribute.Remove-R8-weka.filters.unsupervised.attribute.Remove-R11-weka.filters.unsupervised.attribute.Remove-R8-9-weka.filters.unsupervised.attribute.Remove-R5-6,8-9-weka.filters.unsupervised.attribute.Remove-R8-9 (649 instances)
+16:22:16: Started weka.associations.Apriori
+16:22:16: Command: weka.associations.Apriori -N 10 -T 0 -C 0.7 -D 0.05 -U 1.0 -M 0.1 -S -1.0 -c -1
+16:22:16: Finished weka.associations.Apriori
+16:26:22: Command: weka.filters.unsupervised.attribute.Remove -R 1-2,5-12
+16:26:22: Base relation is now BASE-weka.filters.unsupervised.attribute.Remove-R2-weka.filters.unsupervised.attribute.Remove-R8-weka.filters.unsupervised.attribute.Remove-R11-weka.filters.unsupervised.attribute.Remove-R8-9-weka.filters.unsupervised.attribute.Remove-R5-6,8-9-weka.filters.unsupervised.attribute.Remove-R8-9-weka.filters.unsupervised.attribute.Remove-R1-2,5-12 (649 instances)
+16:26:30: Started weka.associations.Apriori
+16:26:30: Command: weka.associations.Apriori -N 10 -T 0 -C 0.6 -D 0.05 -U 1.0 -M 0.1 -S -1.0 -c -1
+16:26:30: Finished weka.associations.Apriori
